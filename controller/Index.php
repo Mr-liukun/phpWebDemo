@@ -4,22 +4,14 @@ namespace app\index\controller;
 use think\Controller;
 use think\Request;
 use app\index\model\DB as db;
-
+use think\Config;
 class Index extends Controller
 {
 //    public function index(Request $request)
 //    {
-//        // 获取浏览器输入的值
-////        dump($request->domain());
-////        dump($request->pathinfo());
-////        dump($request->path());
-////        //请求方式
-////        dump($request->method());
-////        dump($request->get());
-////        dump($request->session());
+//        dump(config());
+//           Config::has();
 //
-//
-//        return $this->fetch("login");
 //    }
 
     public function login(Request $request)
@@ -35,7 +27,7 @@ class Index extends Controller
      *  DocumentRoot "D:\phpProject\tp5\public"
      *  <Directory "D:\phpProject\tp5\public">的情况下
      * 访问路由：http://localhost:9999/index.php/index/index/fun(不区分大小写)
-     *                                         /模块/控制器/方法
+     *                                         /模块/控制器/方法exit
      */
     public function fun(Request $request)
     {
